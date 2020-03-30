@@ -1,0 +1,8 @@
+@import 'vars';
+
+@font-face { font-family: $font-bold; src: url(#{$fonts-src}/RobotoCondensed-Bold.ttf); }
+@font-face { font-family: $font-boldItalic; src: url(#{$fonts-src}/RobotoCondensed-BoldItalic.ttf); }
+@font-face { font-family: $font-italic; src: url(#{$fonts-src}/RobotoCondensed-Italic.ttf); }
+@font-face { font-family: $font-light; src: url(#{$fonts-src}/RobotoCondensed-Light.ttf); }
+@font-face { font-family: $font-lightItalic; src: url(#{$fonts-src}/RobotoCondensed-LightItalic.ttf); }
+@font-face { font-family: $font-regular; src: url(#{$fonts-src}/RobotoCondensed-Regular.ttf); }

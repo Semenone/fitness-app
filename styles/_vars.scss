@@ -1,0 +1,30 @@
+$hd: 1280px;
+$hd-ready-1366: 1366px;
+$hd-ready-1400: 1400px;
+$hd-ready-1680: 1680px;
+$full-hd: 1920px;
+$uhd: 3840px;
+
+$programmable-dimension: 1280;
+$design-dimension: 1728;
+
+$aspect-ratio: $programmable-dimension / $design-dimension;
+
+$white: #ffffff;
+$black: #000000;
+$light-grey: #8f8f8f;
+$app-background-color: #262626;
+$app-primary-color: $white;
+$app-secondary-color: #f8ff13;
+
+$src: "~";
+
+// TODO: Update RobotoCondensed fonts with project-specific ones below
+$fonts-src: '#{$src}assets/fonts/RobotoCondensed';
+
+$font-bold: 'RobotoCondensed Bold';
+$font-boldItalic: 'RobotoCondensed BoldItalic';
+$font-italic: 'RobotoCondensed Italic';
+$font-light: 'RobotoCondensed Light';
+$font-lightItalic: 'RobotoCondensed LightItalic';
+$font-regular: 'RobotoCondensed Regular';

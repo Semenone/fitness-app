@@ -1,0 +1,39 @@
+@import 'vars';
+
+@mixin valign {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin halign {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin hvalign {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+
+@mixin skew ($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+@function adjustPx($px) {
+    @return $aspect-ratio * $px;
+}
+
+@function calcZoom($screen-resolution) {
+    @return $screen-resolution/$hd;
+}

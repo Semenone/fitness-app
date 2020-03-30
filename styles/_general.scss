@@ -1,0 +1,92 @@
+@import 'vars';
+@import 'mixins';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+body {
+  width: $hd;
+  height: 720px;
+
+  @media (min-width: $hd-ready-1366) {
+    zoom: calcZoom($hd-ready-1366);
+  }
+
+  @media (min-width: $hd-ready-1400) {
+    zoom: calcZoom($hd-ready-1400);
+  }
+
+  @media (min-width: $hd-ready-1680) {
+    zoom: calcZoom($hd-ready-1680);
+  }
+
+  @media (min-width: $full-hd) {
+    zoom: calcZoom($full-hd);
+  }
+
+  @media (min-width: $uhd) {
+    zoom: calcZoom($uhd);
+  }
+
+  line-height: 1;
+
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-perspective: 1000;
+  perspective: 1000;
+
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+
+  background-color: $app-background-color;
+  color: $app-primary-color;
+
+  font-size: 21px;
+  font-family: $font-regular, 'Arial', sans-serif;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  background-size: 1280px 720px;
+}
+
+main * {
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+[hidden], .hidden {
+  display: none !important;
+}
+
+[invisible], .invisible {
+  visibility: hidden !important;
+}
