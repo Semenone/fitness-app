@@ -3,11 +3,17 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --proxy-config proxy.conf.json",
+    "start-tv": "ng serve --host=$npm_package_tvConfig_host --public-host=$npm_package_tvConfig_host:$npm_package_tvConfig_port --live-reload --proxy-config proxy.conf.json",
+    "build": "ng build --prod --build-optimizer --output-hashing none",
+    "analyze-build": "ng build --stats-json --build-optimizer --output-hashing none",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },
+  "tvConfig": {
+    "host": "192.168.100.96",
+    "port": "4200"
   },
   "private": true,
   "dependencies": {
